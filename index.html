@@ -11,10 +11,8 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
     p {
-      font-size: 16px;
+      font-size: clamp(0.5rem, 1rem, 1rem);
     }
     body {
       margin: 0;
@@ -30,19 +28,21 @@
       background: #fff;
       display: flex;
       flex-direction: column;
-      width: 340px;
-      height: 480px;
+      align-self: center;
+      max-width: 350px;
+      margin: 30px;
+      height: 500px;
       padding: 20px;
-      border-radius: 24px;
+      border-radius: 18px;
       border: 1px solid black;
       box-shadow: 10px 10px black;
     }
 
     .illustration {
       height: 260px;
-      width: 340px;
+      width: auto;
       overflow: hidden;
-      border-radius: 20px;
+      border-radius: 12px;
       margin-bottom: 22px;
     }
 
@@ -71,10 +71,14 @@
     .title {
       font-weight: 800;
       margin-bottom: 0;
+      font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+      width: 85%;
+      white-space: nowrap;
     }
 
     .desc {
       color: hsl(0, 0%, 42%);
+      line-height: 1.5;
     }
 
     .author {
